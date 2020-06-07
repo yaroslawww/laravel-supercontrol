@@ -1,0 +1,31 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateSupercontrolTables extends Migration
+{
+    public function up()
+    {
+        Schema::create(config('supercontrol.log_table'), function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('type', 50)->nullable();
+            $table->string('method', 50)->nullable();
+            $table->text('url')->nullable();
+            $table->longText('request_body')->nullable();
+            $table->longText('response_body')->nullable();
+            $table->longText('exception')->nullable();
+            $table->json('meta')->nullable();
+            $table->timestamps();
+        });
+    }
+
+     /**
+         * Reverse the migrations.
+         */
+        public function down()
+        {
+            Schema::dropIfExists(config('supercontrol.log_table'));
+        }
+}

@@ -1,0 +1,66 @@
+{
+    "name": "yaroslawww/laravel-supercontrol",
+    "description": "Laravel SuperControl api client",
+    "keywords": [
+        "supercontrol.co.uk",
+        "supercontrol",
+        "laravel-supercontrol"
+    ],
+    "homepage": "https://github.com/yaroslawww/laravel-supercontrol",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yaroslav Georgitsa",
+            "email": "yaroslav.georgitsa@gmail.com",
+            "homepage": "https://think.studio",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "guzzlehttp/guzzle": "~6.0",
+        "spatie/array-to-xml": "^2.11",
+        "mtownsend/xml-to-array": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^9.0",
+        "psalm/plugin-laravel": "^1.2",
+        "vimeo/psalm": "^3.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelSupercontrol\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelSupercontrol\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "psalm": "vendor/bin/psalm",
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage",
+        "format": "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelSupercontrol\\ServiceProvider"
+            ],
+            "aliases": {
+                "SupercontrolApiLegacy": "LaravelSupercontrol\\Facades\\SupercontrolApiLegacy",
+                "SupercontrolApiV1": "LaravelSupercontrol\\Facades\\SupercontrolApiV1",
+                "SupercontrolApiV3": "LaravelSupercontrol\\Facades\\SupercontrolApiV3",
+                "SupercontrolApiBooking": "LaravelSupercontrol\\Facades\\SupercontrolApiBooking"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
