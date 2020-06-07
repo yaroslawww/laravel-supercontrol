@@ -223,5 +223,5 @@ SupercontrolApiBooking::bookingRequest($requestData)->getConvertedBody();
 
 ## Credits
 
-- [![Think Studio](https://yaroslawww/laravel-supercontrol/docs/assets/logo-think-studio.png)](https://think.studio/)
+- [![Think Studio](/docs/assets/logo-think-studio.png)](https://think.studio/)
 - [Yaroslav Georgitsa](mailto:yaroslav.georgitsa@gmail.com)
