@@ -36,7 +36,7 @@ SUPERCONTROL_API_KEY=11111111-1111-1111-1111-111111111111
 ## Legacy API endpoints
 **siteID** is not required (by default it specified on laravel configs)
 
-See full docs [there](/docs/supercontrol/SuperControl API Endpoint Overview.pdf)
+See full docs: [SuperControl API Endpoint Overview.pdf](https://github.com/yaroslawww/laravel-supercontrol/tree/master/docs/supercontrol)
 
 ```php
 use \LaravelSupercontrol\Facades\SupercontrolApiLegacy;
@@ -132,7 +132,7 @@ SupercontrolApiV1::helper()->getTerms(['client' => ['siteID' => 1234]])->getConv
 ## API V3 endpoints
 Header **SC-TOKEN** is not required (by default it specified on laravel configs)
 
-See full docs [there](/docs/supercontrol/Data Export API Documentation.pdf)
+See full docs: [Data Export API Documentation.pdf](https://github.com/yaroslawww/laravel-supercontrol/tree/master/docs/supercontrol)
 
 ```php
 use \LaravelSupercontrol\Facades\SupercontrolApiV3;
@@ -159,7 +159,7 @@ SupercontrolApiV3::dataExport()->bookings(['LastUpdate' => '2020-05-06'])->getCo
 
 **client->key** is not required (by default it specified on laravel configs)
 
-See full docs [there](/docs/supercontrol/SuperControl Booking API.pdf)
+See full docs: [SuperControl Booking API.pdf](https://github.com/yaroslawww/laravel-supercontrol/tree/master/docs/supercontrol)
 
 ```php
 use \LaravelSupercontrol\Facades\SupercontrolApiBooking;
