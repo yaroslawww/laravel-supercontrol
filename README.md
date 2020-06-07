@@ -23,13 +23,13 @@ php artisan vendor:publish --provider="LaravelSupercontrol\ServiceProvider" --ta
 Configuration in *.env*
 ```dotenv
 SUPERCONTROL_DEFAULT_SITE_ID=46
-# Optional, required only to use api V1
+# Optional, required only if you use api V1 or Booking
 SUPERCONTROL_API_ID=123456
 SUPERCONTROL_API_KEY=11111111-1111-1111-1111-111111111111
-# Optional, required only to use api V3
+# Optional, required only if you use api V1
 # SUPERCONTROL_API_SC_TOKEN=11111111-1111-1111-1111-111111111111
 
-# only if ypu want save all requests/response content
+# Only if you want save all requests/response content
 # SUPERCONTROL_DB_LOGS_BOOKING_API=true
 ```
 
