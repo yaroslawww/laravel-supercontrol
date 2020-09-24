@@ -12,13 +12,13 @@
         {
             "name": "Yaroslav Georgitsa",
             "email": "yaroslav.georgitsa@gmail.com",
-            "homepage": "https://www.linkedin.com/in/yaroslawww/",
+            "homepage": "https://yaroslawww.github.io",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.4",
-        "guzzlehttp/guzzle": "~6.0",
+        "guzzlehttp/guzzle": "^6.0|^7.0",
         "spatie/array-to-xml": "^2.11",
         "mtownsend/xml-to-array": "^1.0"
     },

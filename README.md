@@ -1,4 +1,4 @@
-# Laravel supercontrol api client
+# Laravel supercontrol API client
 https://supercontrol.co.uk/
 
 ## Installation
