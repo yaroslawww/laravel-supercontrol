@@ -78,4 +78,23 @@ class PropertyManager extends AbstractManager
     {
         return $this->client->request('get', 'property_dates.asp', $this->mergeQuery($query, $options));
     }
+
+
+
+    /**
+     * $query['propertycode'] // required (PropertyId)
+     * @param array $query
+     * @param array $options
+     * @return ApiResponse
+     */
+    public function propertyTestimonials($query = [], array $options = []): ApiResponse
+    {
+        if (! is_array($query)) {
+            $query = [
+                'propertycode' => $query,
+            ];
+        }
+
+        return $this->client->request('get', 'testimonials_xml.asp', $this->mergeQuery($query, $options));
+    }
 }
